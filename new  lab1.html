@@ -1,0 +1,81 @@
+<html>
+<head>
+Order your business card here
+<script type="text/javascript">
+function disp()
+{
+      document.getElementById("companydisp").innerHTML=document.getElementById("company").value;
+      document.getElementById("lnamedisp").innerHTML=document.getElementById("Lname").value;
+	  document.getElementById("fnamedisp").innerHTML=document.getElementById("fname").value;
+      document.getElementById("titledisp").innerHTML=document.getElementById("title").value;
+	  document.getElementById("emaildisp").innerHTML=document.getElementById("email").value;
+      document.getElementById("teledisp").innerHTML=document.getElementById("telephone").value;
+	  document.getElementById("output").style.backgroundColor=document.getElementById("Bcolor").value;
+	  document.getElementById("output").style.fontFamily=document.getElementById("font").value;
+	  document.getElementById("outPut").style.color=document.getElementById("Tcolor").value;
+}
+</script>
+</head>
+<body>
+<div>
+     <form>
+	 <label for="company">Campany:</label>
+	 <input type="text" name="company" id="company">
+	 <br />
+	 <label for="a2">Lastname:</label>
+	 <input type="text" name="Lname" id="Lname" />
+	 <br />
+	 <label for="a3">Firstname:</label>
+	 <input type="text" name="fname" id="fname" />
+	 <br />
+	 <label for="a4">Title:</label>
+	 <input type="text" name="title" id="title" />
+	 <br />
+	 <label for="a5">Telephone:</label>
+	 <input type="text" name="tele" id="telephone" />
+	 <br />
+	 <label for="a6">E-mail:</label>
+	 <input type="text" name="email" id="email" />
+	 <br />
+	 <label for="a7">Backgroundcolor:</label>
+	 <select name="backgroundcolor" id="Bcolor">
+        <option value="LightBlue">light blue</option>
+        <option value="LightYellow">light yellow</option>
+        <option value="White">white</option>
+        <option value="ForestGreen">forest green</option>
+     </select>
+     <br />
+	 <label for="a8">Textcolor:</label>
+	 <select name="textcolor" id="Tcolor">
+        <option value="Black">black</option>
+        <option value="Blue">blue</option>
+        <option value="Red">red</option>
+        <option value="DarkGreen">dark green</option>
+     </select>
+     <br />
+	 <label for="a9">Font:</label>
+	 <select name="font" id="font">
+        <option value="Verdana">verdana</option>
+        <option value="Arial">arial</option>
+        <option value="Tahoma">tahoma</option>
+        <option value="Impact">impact</option>
+     </select>
+	 <br />
+	 <input type="button" value="Reset"  onclick="reset()" />
+	 <input type="button" value="Print" onclick="disp()" />
+	 
+	 </form>
+</div>
+<div id="output">
+     <h1>my card</h1>
+     <p id="companydisp"></p>
+     <p id="lnamedisp"></p>
+     <p id="fnamedisp"></p>
+     <p id="titledisp"></p>
+     <p id="emaildisp"></p>
+     <p id="teledisp"></p>
+	 
+	 
+</div>
+</body>
+</html>
